@@ -1,0 +1,36 @@
+package aiproject;
+
+import java.util.Scanner;
+
+class chatBoot {
+
+	public chatBoot() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("hello I am AI Bot. Ask me something");
+		 
+		while(true) {
+			String input=sc.nextLine();
+			
+			if(input.equalsIgnoreCase("hi")) {
+				System.out.println("Hello! how can I help you?");
+			}else if(input.equalsIgnoreCase("how are you")) {
+				System.out.println("I am fine. what about you");
+			}
+			
+			else if(input.equalsIgnoreCase("bye")) {
+				System.out.println("GoodBye");
+				break;
+			}
+			else {
+				System.out.println("sorry, I dont understand");
+			}
+		}
+
+	}
+
+}
